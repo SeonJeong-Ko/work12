@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>work</title>
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+  <link rel="stylesheet" href="./item.css">
+  <script src="./item.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="content">
+      <h2>BREAK OUT</h2>
+      <p>2024.06</p>
+      
+      <!-- Gallery -->
+      <div class="gallery">
+        <button class="arrow left-arrow" onclick="changeSlide(-1)">&#9664;</button>
+        <div class="gallery-items">
+          <img src="./12_1.png" alt="work" class="responsive-media gallery-item" onclick="openInNewWindow(this.src)">
+          <img src="./12_2.png" alt="work" class="responsive-media gallery-item" onclick="openInNewWindow(this.src)">
+          <div class="responsive-media gallery-item media-container">
+            <video src="./8_breakout.mp4" autoplay muted loop onclick="openInNewWindow(this.src)"></video>
+            <p class="video-duration">02:46</p>
+          </div>
+        </div>        
+        <button class="arrow right-arrow" onclick="changeSlide(1)">&#9654;</button>
+      </div>
+      
+      <div class="note">
+        <p>각자가 직면한 '벽'을 정의하고 이를 극복하는 과정을 게임을 통해 탐구해보고자 했다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
